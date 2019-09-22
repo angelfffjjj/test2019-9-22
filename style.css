@@ -1,0 +1,66 @@
+body{
+    margin:0px;
+    font-family:"微軟正黑體","新細明體";
+}
+.header{
+    text-align:center;
+    font-size:40px;
+    font-weight:bold;
+    color:white;
+    background-color:purple;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.nav{
+    font-size:24pz;
+    text-align:center;
+    height:50px;
+    line-height:50px;
+}
+/*階層式的選擇器*/
+.nav>.item{
+    padding:20px;
+    cursor:pinter;
+}
+/*虛擬選擇器，和其他選擇器搭配*/
+.nav>.item:hover{
+    background-color:#dddddd;
+}
+.visual{
+    height:500px;
+    background-image:url(visual.jpg);
+    background-position:center 70%;
+    background-size:cover;
+
+    font-size:40px;
+    text-align: center;
+    color:black;
+    text-shadow:0px 0px 10px white;
+}
+/*cs 排版工具：flexbox*/
+.content{
+    display:flex; /*區塊並排*/
+    justify-content:center; /*左右對齊*/
+    align-items:center; /*垂直對齊*/
+
+    padding:40px 0px;
+}
+.content>.left{
+    width:500px;
+    text-align:center;
+}
+.content>.right{
+    widows: 600px;
+    font-size:24px;
+    line-height:40px;
+    text-align:center;
+}
+/* .left 中的細節*/
+.content>.left>.head{
+    width:300px;height:300px;
+    border-radius:50%;
+}
+/*right 中的細節*/
+.content>.right>.title{
+    font-weight:bold;
+}
